@@ -1,0 +1,14 @@
+def is_sorted(List1):
+    flag = False
+    for i in range(1,len(List1)):
+        if List1[i-1]<List1[i]:
+            flag =True
+        else:
+            flag=False
+            break
+    if flag==True:
+        return True
+    else:
+        return False
+L2=[1,2,3,4,5]
+print(is_sorted(L2))
